@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+    </tr>
+    {% for view in view %}
+    <tr>
+        <td>{{ view[1] }}</td>
+        <td>{{ view[2] }}</td>
+        <td>{{ view[3] }}</td>
+        <td>{{ view[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
